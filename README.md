@@ -1,10 +1,12 @@
-# my_dagster_project
+## my_dagster_project
 
-This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
+!! This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
 
-Install smtplib, glob, time, email.message import EmailMessage.
+!! Install smtplib, glob, time, email.message import EmailMessage.
 
-my_dagster_project >> assets.py and __init__.py as well as st.py
+!! my_dagster_project >> assets.py and __init__.py as well as st.py
+
+!! Change mail password
 
 ## Getting started
 
