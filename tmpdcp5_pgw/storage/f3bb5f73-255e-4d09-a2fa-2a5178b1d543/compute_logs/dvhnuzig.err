@@ -1,0 +1,7 @@
+[32m2023-10-14 18:40:46 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - LOGS_CAPTURED - Started capturing logs in process (pid: 65813).
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - hello_world - STEP_START - Started execution of step "hello_world".
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - hello_world - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - hello_world - Writing file at: /Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpdcp5_pgw/storage/hello_world using PickledObjectFilesystemIOManager...
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - hello_world - ASSET_MATERIALIZATION - Materialized value hello_world.
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - hello_world - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2023-10-14 18:40:47 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - f3bb5f73-255e-4d09-a2fa-2a5178b1d543 - 65813 - hello_world - STEP_SUCCESS - Finished execution of step "hello_world" in 40ms.

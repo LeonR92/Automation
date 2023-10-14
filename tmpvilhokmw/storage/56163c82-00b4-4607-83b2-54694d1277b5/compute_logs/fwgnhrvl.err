@@ -1,0 +1,7 @@
+[32m2023-10-14 19:23:02 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - LOGS_CAPTURED - Started capturing logs in process (pid: 68678).
+[32m2023-10-14 19:23:02 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - create_dataset - STEP_START - Started execution of step "create_dataset".
+[32m2023-10-14 19:23:02 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - create_dataset - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2023-10-14 19:23:02 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - create_dataset - Writing file at: /Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpvilhokmw/storage/create_dataset using PickledObjectFilesystemIOManager...
+[32m2023-10-14 19:23:03 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - create_dataset - ASSET_MATERIALIZATION - Materialized value create_dataset.
+[32m2023-10-14 19:23:03 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - create_dataset - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2023-10-14 19:23:03 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - 56163c82-00b4-4607-83b2-54694d1277b5 - 68678 - create_dataset - STEP_SUCCESS - Finished execution of step "create_dataset" in 43ms.

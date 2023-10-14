@@ -1,0 +1,27 @@
+[32m2023-10-14 18:43:54 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c62120ac-0e1f-4578-bae2-eb36f19aa6a4 - 66125 - LOGS_CAPTURED - Started capturing logs in process (pid: 66125).
+[32m2023-10-14 18:43:54 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c62120ac-0e1f-4578-bae2-eb36f19aa6a4 - 66125 - hello_world - STEP_START - Started execution of step "hello_world".
+[32m2023-10-14 18:43:54 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c62120ac-0e1f-4578-bae2-eb36f19aa6a4 - hello_world - Loading file from: /Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpe9ofa7eh/storage/create_message using PickledObjectFilesystemIOManager...
+[32m2023-10-14 18:43:54 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - c62120ac-0e1f-4578-bae2-eb36f19aa6a4 - 66125 - hello_world - STEP_FAILURE - Execution of step "hello_world" failed.
+
+dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "create_message" of step "hello_world"::
+
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpe9ofa7eh/storage/create_message'
+
+Stack Trace:
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/inputs.py", line 830, in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/storage/upath_io_manager.py", line 402, in load_input
+    return self._load_single_input(path, context)
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/storage/upath_io_manager.py", line 256, in _load_single_input
+    raise e
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/storage/upath_io_manager.py", line 239, in _load_single_input
+    obj = self.load_from_path(context=context, path=path)
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/storage/fs_io_manager.py", line 283, in load_from_path
+    with path.open("rb") as file:
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+[0m

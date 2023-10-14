@@ -1,0 +1,7 @@
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - LOGS_CAPTURED - Started capturing logs in process (pid: 66139).
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - create_message - STEP_START - Started execution of step "create_message".
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - create_message - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - create_message - Writing file at: /Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpe9ofa7eh/storage/create_message using PickledObjectFilesystemIOManager...
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - create_message - ASSET_MATERIALIZATION - Materialized value create_message.
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - create_message - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2023-10-14 18:43:55 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 91a3131c-95cf-458b-8eb8-d205886dd4da - 66139 - create_message - STEP_SUCCESS - Finished execution of step "create_message" in 41ms.

@@ -1,0 +1,24 @@
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - LOGS_CAPTURED - Started capturing logs in process (pid: 68591).
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - dynamic_dataset_to_csv - STEP_START - Started execution of step "dynamic_dataset_to_csv".
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - dynamic_dataset_to_csv - Loading file from: /Users/leonjy92/Downloads/Dagster/my-dagster-project/tmpvilhokmw/storage/create_dataset using PickledObjectFilesystemIOManager...
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - dynamic_dataset_to_csv - ASSET_OBSERVATION - ASSET_OBSERVATION for step dynamic_dataset_to_csv
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - dynamic_dataset_to_csv - LOADED_INPUT - Loaded input "create_dataset" using input manager "io_manager", from output "result" of step "create_dataset"
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mDEBUG[0m - dummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - dynamic_dataset_to_csv - STEP_INPUT - Got input "create_dataset" of type "Any". (Type check passed).
+[32m2023-10-14 19:22:04 +0200[0m - dagster - [34mERROR[0m - [31mdummy_job - e5414eb9-6e7c-4ffa-8ba3-5f147d40fdd0 - 68591 - dynamic_dataset_to_csv - STEP_FAILURE - Execution of step "dynamic_dataset_to_csv" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "dynamic_dataset_to_csv"::
+
+NameError: name 'os' is not defined
+
+Stack Trace:
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_utils/__init__.py", line 443, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/compute_generator.py", line 136, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/Users/leonjy92/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/compute_generator.py", line 130, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/Users/leonjy92/Downloads/Dagster/my-dagster-project/my_dagster_project/assets.py", line 25, in dynamic_dataset_to_csv
+    while os.path.exists(filename):
+[0m
