@@ -9,7 +9,7 @@ from email.message import EmailMessage
 def send_email(subject, body):
     # Set up email details
     EMAIL_ADDRESS = 'devopsgod99@gmail.com'
-    EMAIL_PASSWORD = 'Leon9999'
+    EMAIL_PASSWORD = 'password'
     SMTP_SERVER = 'smtp-mail.outlook.com'
     SMTP_PORT = 587
 
